@@ -1,14 +1,25 @@
 body {
+    background-color: #b7e9f7;
     overflow-x: hidden;
 }
+
+h1 {
+    color: black;
+}
+
+h2 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+#top-img {
+    background-image: url('../img/img_2947_resize.jpg');
+    margin-top: 30px;
+}
+
 
 .ng-scope {
     margin-left: 5%;
     margin-right: 5%;
-}
-
-header {
-    background-image: url('../img/main-img.jpg');
 }
 
 #logo {
