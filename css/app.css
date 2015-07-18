@@ -1,0 +1,75 @@
+body {
+    overflow-x: hidden;
+}
+
+.ng-scope {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header {
+    background-image: url('../img/main-img.jpg');
+}
+
+#logo {
+    height: 75px;
+    width: 250px;
+}
+
+#header {
+	height: 50px;
+	padding-top: 250px;
+	background-color: #b7e9f7;
+}
+
+#main-content {
+	height: 700px;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-fixed-top {
+    padding: 0px;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+}
+
+.navbar-fixed-top .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    height: 50px;
+    background-color: #b7e9f7;
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}

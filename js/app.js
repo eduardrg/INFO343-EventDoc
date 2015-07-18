@@ -3,17 +3,21 @@ var myApp = angular.module('myApp', ['ngRoute']);
 myApp.config(function($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: 'templates/landing.html',
+      templateUrl: 'templates/home.html',
       controller: 'LandingController',
     })
    .when('/content/', {
     	templateUrl: 'templates/content.html',
    	 	controller: 'ContentController',
   	})
-   .when('/about/', {
-    	templateUrl: 'templates/about.html',
-    	controller: 'AboutController',
+   .when('/technical/', {
+    	templateUrl: 'templates/technical.html',
+    	controller: 'TechnicalController',
   	})
+   .when('/about/', {
+      templateUrl: 'templates/about.html',
+      controller: 'AboutController',
+    })
 })
    // Landing page controller
 .controller('LandingController', function($scope){
@@ -27,5 +31,8 @@ myApp.config(function($routeProvider) {
 
 // Content controller
 .controller('ContentController', function($scope){
+  $scope.url = "http://conference.unavsa.org/wp-content/uploads/2015/06/SEA-pic.jpg"
+})
+.controller('TechnicalController', function($scope){
   $scope.url = "http://conference.unavsa.org/wp-content/uploads/2015/06/SEA-pic.jpg"
 })

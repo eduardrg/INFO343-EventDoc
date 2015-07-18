@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="https://code.jquery.com/jquery.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.js"></script>
+	<head>
+		<script src="https://code.jquery.com/jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.js"></script>
 
-<!-- Add angular route library here -->
+		<!-- Add angular route library here -->
 
-<script src="js/app.js"></script>
-<link href = "css/app.css" rel="stylesheet" type = "text/css"/>
-  <meta charset="utf-8">
-  <title>Multipage Example</title>
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-        <h1>This is the header -- it'll stick around</h1>
-        <div class="btn-group btn-group-justified" role="group" aria-label="...">
-          <div class="btn-group" role="group">
-            <a href="#/"><button type="button" class="btn btn-default">Home</button></a>
-          </div>
-          <div class="btn-group" role="group">
-            <a href="#/content"><button type="button" class="btn btn-default">Content</button></a>
-          </div>
-          <div class="btn-group" role="group">
-            <a href="#/about"><button type="button" class="btn btn-default">About</button></a>
-          </div>
-        </div>
+		<script src="js/app.js"></script>
+		<link href="css/app.css" rel="stylesheet" type = "text/css"/>
+		<link href='css/home.css' rel='stylesheet' type='text.css'/>
+		<meta charset="utf-8">
+		<title>EventDoc</title>
+	</head>
 
-      </div>
-    </div>
-    <div ng-app="myApp">
-      <div ng-view></div>
-    </div>
-    <div class="footer">
-        <h2>(This is the footer -- it'll stick around too)</h2>
-    </div>
-  </div>
-</body>
+	<body>
+
+		<!-- Nav Bar Content Here -->
+		
+
+		<!-- Header Content Here -->
+		<header id="header">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			<!--image id='logo' src='img/main-img.jpg'></image -->
+			<div id="page-top" class="navbar-header page-scroll">
+				<div class="container">
+					<div class="btn-group btn-group-justified" role="group" aria-label="...">
+						<div>
+			                <ul class="nav navbar-nav navbar-right">
+			                    <li class="page-scroll">
+			                        <div class="btn-group" role="group">
+		            					<a href="#/"><button type="button" class="btn btn-default">Home</button></a>
+		          					</div>
+			                    </li>
+			                    <li class="page-scroll">
+			                       	<div class="btn-group" role="group">
+		            					<a href="#/content"><button type="button" class="btn btn-default">Content</button></a>
+		         					</div>
+			                    </li>
+			                    <li class="page-scroll">
+			                        <div class="btn-group" role="group">
+		            					<a href="#/technical"><button type="button" class="btn btn-default">Technical</button></a>
+		          					</div>
+			                    </li>
+			                    <li class="page-scroll">
+ 									<div class="btn-group" role="group">
+		            					<a href="#/about"><button type="button" class="btn btn-default">About</button></a>
+		          					</div>
+			                    </li>
+			                </ul>
+			            </div>
+			        </div>
+				</div>
+			</div>
+		</nav>
+		</header>
+
+		<!-- Main Content Here -->
+		 <div ng-app="myApp">
+      		<div ng-view></div>
+   		 </div>
+
+		<!-- Footer Content Here -->
+		<footer class="text=center">
+			<div class="container footer-col">
+				<a href="#page-top">Home</a>
+			</div>
+		</footer>
+
+	</body>
+
 </html>
