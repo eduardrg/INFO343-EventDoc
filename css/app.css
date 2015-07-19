@@ -33,6 +33,8 @@ body {
 }
 
 p{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 20px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -40,12 +42,24 @@ p{
     margin-right: 10%;
 }
 
-h1 {
-    color: black;
+#saying {
+    font-size: 
 }
 
-h2 {
+h1 {
+    font-size: 60px;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    color: #3b27aa;
+}
+
+h3 {
     color: gray;
+}
+
+#tagLine {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+    color: #27a586
 }
 
 
