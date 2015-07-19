@@ -2,6 +2,19 @@ body {
     overflow-x: hidden;
 }
 
+.startCode {
+    border: solid;
+    border-color: black;
+}
+
+#homeScreen {
+    height: 50%;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
 #fullBox {
     height: 600px;
     width: 100%
@@ -35,7 +48,6 @@ body {
 p{
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-size: 20px;
-    text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 10%;
@@ -73,6 +85,12 @@ h3 {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.content2 {
+    text-align: left;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 #logo {
