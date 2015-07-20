@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-#serverPic {
+.serverPic {
     width: 90%
 }
 
