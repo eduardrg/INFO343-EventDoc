@@ -4,19 +4,23 @@ myApp.config(function($routeProvider) {
   $routeProvider
     .when('/', {
       templateUrl: 'templates/home.html',
-      controller: 'LandingController',
+      controller: 'HomeController',
     })
    .when('/content/', {
-    	templateUrl: 'templates/content.html',
-   	 	controller: 'ContentController',
-  	})
-   .when('/technical/', {
-    	templateUrl: 'templates/technical.html',
-    	controller: 'TechnicalController',
-  	})
+      templateUrl: 'templates/content.html',
+      controller: 'ContentController',
+    })
    .when('/about/', {
       templateUrl: 'templates/about.html',
       controller: 'AboutController',
+    })
+    .when('/technical/', {
+      templateUrl: 'templates/technical.html',
+      controller: 'TechnicalController',
+    })
+    .when('/soon/', {
+      templateUrl: 'templates/soon.html',
+      controller: 'SoonController',
     })
 })
    // Landing page controller
@@ -34,5 +38,8 @@ myApp.config(function($routeProvider) {
   $scope.url = "http://conference.unavsa.org/wp-content/uploads/2015/06/SEA-pic.jpg"
 })
 .controller('TechnicalController', function($scope){
-  $scope.url = "http://conference.unavsa.org/wp-content/uploads/2015/06/SEA-pic.jpg"
+  $scope.about = "Here's some information about this page."
+})
+.controller('SoonController', function($scope){
+  $scope.about = "Here's some information about this page."
 })

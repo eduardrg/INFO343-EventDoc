@@ -2,7 +2,12 @@ body {
     overflow-x: hidden;
 }
 
+#serverPic {
+    width: 90%
+}
+
 .startCode {
+    margin-left: 5%;
     border: solid;
     border-color: black;
 }
@@ -17,7 +22,9 @@ body {
 
 #fullBox {
     height: 600px;
-    width: 100%
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #title {
