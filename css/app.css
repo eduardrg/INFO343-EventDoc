@@ -61,6 +61,14 @@ p{
     margin-right: 10%;
 }
 
+p.caption {
+    font-style: italic;
+}
+
+p.chartTitle {
+    font-style: bold;
+}
+
 #saying {
     font-size: 
 }
@@ -86,7 +94,6 @@ h3 {
     background-image: url('../img/img_2947_resize.jpg');
     margin-top: 30px;
 }
-
 
 .content {
     text-align: center;

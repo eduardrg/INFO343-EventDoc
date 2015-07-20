@@ -13,17 +13,23 @@
 	</div>
 	<section id='stats' class='content'>
 		<h2>Why is this needed</h2>
-		<image src='img/bcd212f7e732cee62225749a1c4dd39e00c6c997.png'></image>
-		<div id="chart_div">
-		</div>
+		<!-- Charts -->
+		<p class="chartTitle">Paper Documentation Completion</p>
+		<p class="caption">Percent of samples having the information vs. information type</p>
+		<canvas id="Paper" height=500 width=900></canvas>
+		<script src="js/Paper.js"></script>
 		<p>EventDoc arose from the need to have a system to record the procedures performed upon attempting to recesitate a patient in a hospital.  As you can see from the data above there was a distinct lack of completion of the current paper and pen documentation.  This was extremely distressing for not only are these records used in discorving problems in the current practices, but there is an immediate need for care providers to be able to reference the different procedures and medication used throughout the recesitation process.  All of this pointed toward a system that used the interconnectivity of the internet and was based on a device that allowed instant access without a boot-up process.</p>
+		<p class="chartTitle">EventDoc vs. Paper Documentation</p>
+		<p class="caption">EventDoc to left and in blue, paper documentation in silver</p>
+		<canvas id="PaperVsEventDoc" height=500 width=900></canvas>
+		<script src="js/PaperVsEventDoc.js"></script>
+		<p class="caption"></p>
 	</section>
 	<div>
 		<svg class='break'><rect class='gray-line'></svg>
 	</div>
 	<section id='about-the-box' class='content'>
 		<h2>All in One Box</h2>
-		<!-- If the graph(s) can replace where this image is that would be perfect -->
 		<!--image id='fullBox' src='img/IPad_3_box_contents.jpg'></image-->
 		<p>All that is needed to use, record, and access the files will be provided within the package that a hospital may order.</p>  <h4>Click on the different pieces for details</h4>
 		<image id='ipads' class='col-sm-3' src="img/FwSRsSV1lBceAIPO.jpg"></image>
