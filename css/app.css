@@ -6,6 +6,10 @@ body {
     width: 90%
 }
 
+#traumaDoc {
+    width: 90%;
+}
+
 .startCode {
     margin-left: 5%;
     border: solid;
