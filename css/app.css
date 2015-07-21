@@ -2,6 +2,14 @@ body {
     overflow-x: hidden;
 }
 
+#paper {
+    display: inline-block;
+}
+
+.label {
+    display: inline-block;
+}
+
 .serverPic {
     width: 90%
 }
