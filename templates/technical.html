@@ -3,6 +3,11 @@
 		<h2>How it Works</h2>
 		<p>The communication between the iPad and the EventDocTM server is now based on client certificate (over SSL), a critical feature for secure communication. This feature has been successfully tested. The following figure shows the certificate-based communication protocol used for EventDocTM</p>
 		<image class='serverPic' src='../img/server-pic.png'></image>
+	</section>
+		<div>
+			<svg class='break'><rect class='gray-line'></svg>
+		</div>
+	<section class='content'>
 		<h3>Data Flow</h3>
 		<div class="item">
     		<p>1.) When a code is recorded through client device, every data item is transmitted to the server wirelessly as soon as it is entered to the stack or the bullpen. The format of the data transmitted is XML (step 1) <br/> <br/>
@@ -13,6 +18,11 @@
     		6.) The user can also sign in to the server application anytime via a regular web browser to search, view, or download infromation of any existing code (step 8). The seraching criteria include data of the code, patient's name, and the code's status (either finalized or pending finalized)</p> 
 		</div>
 		<image src='../img/DataFlow.png'></image>
+	</section>
+		<div>
+			<svg class='break'><rect class='gray-line'></svg>
+		</div>
+	<section class='content'>
 		<h3>Server Side Security</h3>
 		<div class='item'>
 			<p>1.) The server-side application consists of two modules: the data receiver module (DRM) and the post-code form and reporting module (PCFRM). The web server has been configured such that a client certificate is required when the client tries to connect with DRM.  <br/> <br/>

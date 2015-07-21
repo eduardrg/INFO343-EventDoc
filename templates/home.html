@@ -2,8 +2,8 @@
 	<section class='content'>
 		<h3 id='saying'>Out of the chaos of saving lives comes an advance in electronic medical record keeping</h3>
 		<div id='top-div' class='row'>
-			<image id='top-img1' class='col-sm-6' src='img/main-img-left.jpeg'></image>
-			<image id='top-img1' class='col-sm-6' src='img/main-img-right.jpg'></image>
+			<image id='top-img1' class='col-xs-6' src='img/main-img-left.jpeg'></image>
+			<image id='top-img1' class='col-xs-6' src='img/main-img-right.jpg'></image>
 		</div>
 		<p id='intro-blurb'>The EventDoc System is a comprehensive package that gives the users the recording application, device with application pre-installed, and all other necessary infrastructure to fully record a cardiac arrest event.  This holistic system is the future for hostipal record keeping and immediate patient information retrival.  During a Code Blue there is always hectic activity and the old style pen and paper recording only hampers the process of gathering the appropriate data needed for not only for the patients immediate future, but future patient safety as well.
 		</p>
@@ -32,9 +32,77 @@
 		<h2>All in One Box</h2>
 		<image id='fullBox' src='img/IPad_3_box_contents.jpg'></image>
 		<p>All that is needed to use, record, and access the files will be provided within the package that a hospital may order.</p>  <h4>Click on the different pieces for details</h4>
-		<image id='ipads' class='col-sm-3' src="img/FwSRsSV1lBceAIPO.jpg"></image>
-		<image id='chargers' class='col-sm-3' src='img/0909-chargers.jpg'></image>
-		<image id='manual' class='col-sm-3' src='img/GeForce8400GS-CD-manual.jpg'></image>
-		<a href='#/technical'><image id='server' class='col-sm-3' src='img/HP-server.jpg'></image></a>
+		<!-- Server Modal -->
+		<div id="serverModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h2 class="modal-title">The Server</h2>
+		      </div>
+		      <div class="modal-body">
+		        <p>With the package you will recieve a full implemented server that the Ipads are already connected with. For more information go to our <a href='#/technical' onclick="$('serverModal').modal('hide')">Technical</a> section.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+				<!-- IPad Modal -->
+		<div id="ipadModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h2 class="modal-title">The IPads</h2>
+		      </div>
+		      <div class="modal-body">
+		        <p>Within this package there will be 5 IPads that have the EventDoc fully loaded onto the devices and alreayd connected to the server and ready to record</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+				<!-- Charger Modal -->
+		<div id="chargerModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h2 class="modal-title">The Chargers</h2>
+		      </div>
+		      <div class="modal-body">
+		        <p>Within this package there will be 5 IPad chargers that can be used to keep the IPad's charged.  We recomend their charging stations to be in central areas for easy access during a cardiac arrest event</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+						<!-- Manual Modal -->
+		<div id="manualModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h2 class="modal-title">The Manual</h2>
+		      </div>
+		      <div class="modal-body">
+		        <p>Within this package there will be a manual that gives all pertient information into the functionality the EventDoc application affords you.  There will be a setup manual, along with a jump drive containg the three training modules.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<a data-toggle='modal' data-target='#ipadModal'><image id='ipads' class='col-sm-3' src="img/FwSRsSV1lBceAIPO.jpg"></image></a>
+		<a data-toggle='modal' data-target='#chargerModal'><image id='chargers' class='col-sm-3' src='img/0909-chargers.jpg'></image></a>
+		<a data-toggle='modal' data-target='#manualModal'><image id='manual' class='col-sm-3' src='img/GeForce8400GS-CD-manual.jpg'></image></a>
+		<a data-toggle='modal' data-target='#serverModal'><image id='server' class='col-sm-3' src='img/HP-server.jpg'></image></a>
 	</section>
 </div>
