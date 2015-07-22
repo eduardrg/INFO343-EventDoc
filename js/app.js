@@ -1,9 +1,3 @@
-var closeModal = function(modalName) {
-  $(modalName).modal('hide');
-  $('body').removeClass('modal-open');
-  $('.modal-backdrop').remove();
-};
-
 var myApp = angular.module('myApp', ['ngRoute']);
 // config route provider
 myApp.config(function($routeProvider) {
@@ -60,7 +54,6 @@ myApp.config(function($routeProvider) {
              '<span class="more_text" style="display:none;">'+long_content+'</span>'); /* Alter the html to allow the read more functionality */
              
       $(this).find('a.read_more').click(function(event){ /* find the a.read_more element within the new html and bind the following code to it */
- 
         event.preventDefault(); /* prevent the a from changing the url */
         $(this).hide(); /* hide the read more button */
         $(this).parents('.item').find('.more_text').show(); /* show the .more_text span */

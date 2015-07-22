@@ -1,14 +1,12 @@
-<div id='technical-content'>
-	<section class='content'>
+<div class='page-top' id='technical-content'>
+	<section class='content section-1'>
 		<h2>How it Works</h2>
 		<p>The communication between the iPad and the EventDocTM server is now based on client certificate (over SSL), a critical feature for secure communication. This feature has been successfully tested. The following figure shows the certificate-based communication protocol used for EventDocTM</p>
 		<image class='serverPic' src='../img/server-pic.png'></image>
 	</section>
-		<div>
-			<svg class='break'><rect class='gray-line'></svg>
-		</div>
-	<section class='content'>
-		<h3>Data Flow</h3>
+		
+	<section class='content section-2'>
+		<h2>Data Flow</h2>
 		<div class="item">
     		<p>1.) When a code is recorded through client device, every data item is transmitted to the server wirelessly as soon as it is entered to the stack or the bullpen. The format of the data transmitted is XML (step 1) <br/> <br/>
     		2.) The XML file is validated, and the code information is extracted from the file, which is then saved to the database. The contents of all the XML files are also saved to the database (step2) <br/> <br/>
@@ -19,11 +17,9 @@
 		</div>
 		<image src='../img/DataFlow.png'></image>
 	</section>
-		<div>
-			<svg class='break'><rect class='gray-line'></svg>
-		</div>
-	<section class='content'>
-		<h3>Server Side Security</h3>
+		
+	<section class='content section-1'>
+		<h2>Server Side Security</h2>
 		<div class='item'>
 			<p>1.) The server-side application consists of two modules: the data receiver module (DRM) and the post-code form and reporting module (PCFRM). The web server has been configured such that a client certificate is required when the client tries to connect with DRM.  <br/> <br/>
 			2.) A handshake is carried out between the client and DRM by exchanging their certificates. A secure connection is then established to ensure the communications are encrypted via SSL <br/> <br/>
@@ -31,8 +27,11 @@
 			4.) PCFRM can be accessed from a regular web rowser that is capable of accepting server SSL certificate. To sign into PCFRM, the user provides user name and password, which are then forwarded to the UW identify provider for authentication via a shibboleth-based mechanism <br/><br/> 
 			5.) The credentials returned from the UW identify provider is then used for authorization. The user may or may not access certain resources depending on whether he/she is determined to be associated with some pre-defined groups. Currently, the application accepts two groups: the AMC group and teh ADMIC group. Memeber of AMC group can access the EMR report but not the CQI reports, while the ADMIN group members can access both.</p>
 		</div>
-		<image class='serverPic col-sm-6' src='../img/serve-side-security.png'></image>
-		<image class='serverPic col-sm-6' src='../img/Client-certificate.png'></image>
+
+		<div class='row'>
+			<image class='col-sm-6' src='../img/serve-side-security.png'></image>
+			<image class='col-sm-6' src='../img/Client-certificate.png'></image>
+		</div>
 	</section>
 </div>
 

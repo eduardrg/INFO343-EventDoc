@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html id="#top">
+<html>
 	<head>
 		<script src="https://code.jquery.com/jquery.min.js"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.js"></script>
-		<!-- Charts -->
 		<script src="js/Chart.js/Chart.min.js"></script>
+
 		<!-- Add angular route library here -->
 
 		<script src="js/app.js"></script>
@@ -16,69 +16,57 @@
 		<title>EventDoc</title>
 	</head>
 
-	<body>
-		<!-- Nav Bar Content Here -->
-		
+	<body id="page-top">
 
-		<!-- Header Content Here -->
-		<header id="header">
-			<nav class="navbar navbar-default navbar-fixed-top">
-			<div id="page-top" class="navbar-header page-scroll">
-				<div class="container">
-					<div class="btn-group btn-group-justified" role="group" aria-label="...">
-						<div>
-			                <ul class="nav navbar-nav navbar-right">
-			                    <li class="page-scroll">
-			                        <div class="btn-group" role="group">
-		            					<a href="#/"><button type="button" class="btn btn-default">Home</button></a>
-		          					</div>
-			                    </li>
-			                    <li class="page-scroll">
-			                       	<div class="btn-group" role="group">
-		            					<a href="#/content"><button type="button" class="btn btn-default">QuickStart</button></a>
-		         					</div>
-			                    </li>
-			                    <li class="page-scroll">
-			                        <div class="btn-group" role="group">
-		            					<a href="#/technical"><button type="button" class="btn btn-default">Technical</button></a>
-		          					</div>
-			                    </li>
-			                    <li class="page-scroll">
- 									<div class="btn-group" role="group">
-		            					<a href="#/soon"><button type="button" class="btn btn-default">In Development</button></a>
-		          					</div>
-			                    </li>
-			                     <li class="page-scroll">
- 									<div class="btn-group" role="group">
-		            					<a href="#/about"><button type="button" class="btn btn-default">About</button></a>
-		          					</div>
-			                    </li>
-			                </ul>
-			            </div>
-			        </div>
-				</div>
-			</div>
-		</nav>
-		</header>
-		<h1 id='title'>EventDoc</h1>
-		<h3 id='tagLine' class='content'>Software Specification<h3>
-		<div>
-			<svg class='break'><rect class='gray-line'></svg>
-		</div>
+		<!-- Nav Bar Content Here -->
+	    <nav class="navbar navbar-default navbar-fixed-top">
+	        <div class="container">
+
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header page-scroll">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="#/">EventDoc</a>
+	            </div>
+
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li class="page-scroll">
+	                        <a href="#/">Home</a>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <a href="#/content">QuickStart</a>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <a href="#/technical">Technical</a>
+	                    </li>
+	                     <li class="page-scroll">
+	                        <a href="#/soon">In Development</a>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <a href="#/about">About</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container-fluid -->
+	    </nav>
 
 		<!-- Main Content Here -->
-		 <div ng-app="myApp">
-      		<div ng-view></div>
-   		 </div>
-
-   		<div>
-			<svg class='break'><rect class='gray-line'></svg>
+		<div id="main-content" class="container" ng-app="myApp">
+			<div ng-view></div>
 		</div>
 
 		<!-- Footer Content Here -->
 		<footer class="text=center">
 			<div class="container footer-col">
-				<a href="#/">Home</a>
+				<a href="/#">Top of Page</a>
 			</div>
 		</footer>
 

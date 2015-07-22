@@ -1,5 +1,87 @@
-body {    
+body {
     overflow-x: hidden;
+    background-color: #f7f7f7;
+}
+
+.teampic {
+    height: 150px;
+    width: 115px
+}
+
+.col-sm-3 {
+    height: 300px;
+}
+
+div{
+	display: block;
+}
+
+header {
+	display: table;
+	min-height: auto;
+}
+
+.page-top{
+	margin-top: 100px;
+}
+
+.btn{
+	border: none;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.btn a{
+	text-decoration: none;
+}
+
+.chart{
+	background-color: white;
+	background-size; 
+	overflow: hidden;
+}
+
+#links{
+	margin-bottom: 50px;
+}
+
+/* section styles */
+section{
+	padding-top: 75px;
+	padding-bottom: 75px;
+	width: 100%;
+	color: white;
+}
+
+.section-1{
+	background-color: #155184;
+}
+
+.section-1 .read_more{
+	color: white;
+}
+
+.section-1 .read_more:hover{
+	color: #b8b8b8;
+}
+
+.section-2{
+	color: #155184;
+}
+
+.chart-container{
+	padding-top: 50px;
+	padding-bottom: 100px;
+	background-color: #155184;
+	color: white;
+	font-size: 45px;
+}
+
+.module {
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+    width: auto;
 }
 
 .row {
@@ -13,20 +95,7 @@ body {
     font-size: 15px;
 }
 
-
-#training {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.module {
-    display: block;
-    margin: 0 auto;
-    height: 400px;
-    width: auto;
-}
-
-#paper {
+#Paper {
     display: inline-block;
 }
 
@@ -44,8 +113,6 @@ body {
 
 .startCode {
     margin-left: 5%;
-    border: solid;
-    border-color: black;
 }
 
 #homeScreen {
@@ -56,9 +123,14 @@ body {
     display: block;
 }
 
+#dev-title{
+	margin-bottom: 40px;
+}
+
 #fullBox {
     height: 600px;
     width: auto;
+    margin-top: 30px;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -66,13 +138,11 @@ body {
 #title {
     position: relative;
     margin-top: 70px;
-    font-family: "Times New Roman", Times, serif;
     text-align: center;
 }
 
 #home-content {
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
 }
 
 .break {
@@ -88,8 +158,7 @@ body {
     opacity: .8;
 }
 
-p {
-    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+p{
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -97,34 +166,25 @@ p {
     margin-right: 10%;
 }
 
-p.caption {
-    font-style: italic;
-}
-
 p.chartTitle {
     font-style: bold;
+}
+
+p.caption {
+    font-style: italic;
 }
 
 #saying {
     font-size: 
 }
 
-h1 {
-    font-size: 60px;
-    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    color: #3b27aa;
+h2 {
+	font-size: 40px;
 }
 
 h3 {
     color: gray;
 }
-
-#tagLine {
-    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    text-align: center;
-    color: #27a586
-}
-
 
 #top-img {
     background-image: url('../img/img_2947_resize.jpg');
@@ -133,14 +193,14 @@ h3 {
 
 .content {
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    /*margin-left: 5%;
+    margin-right: 5%;*/
 }
 
 .content2 {
     text-align: left;
-    margin-right: 5%;
-    margin-left: 5%;
+    /*margin-right: 5%;
+    margin-left: 5%;*/
 }
 
 #logo {
@@ -148,19 +208,95 @@ h3 {
     width: 250px;
 }
 
-/*#header {
-	height: 50px;
-	padding-top: 250px;
-}*/
+/* Main Page Elements */
+
+#header {
+	width: 100%;
+	margin-top: 100px;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	padding-top: 25%;
+	padding-bottom: 25%;
+	display: block;
+	background-image: url(../img/iPadMockup.png);
+	background-size: cover;
+}
+
+#coverphoto{
+	width: 100%;
+}
+
+#header-content{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#header-inner{
+	color: #ffffff;
+	margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+
+}
+
+.title{
+	font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+#container{
+	width: 100%;
+}
 
 #main-content {
-	height: 700px;
+	width: 100%;
+	padding: 0px;
+	display: inline-block;
+}
+
+#about{
+	display: block;
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
 }
 
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+}
+
+.navbar-brand {
+	color: #3b27aa;
+}
+
+.navbar-right{
+	float: right;
+	margin-right: -15px;
 }
 
 .navbar-default,
@@ -181,13 +317,14 @@ h3 {
 }
 
 .navbar-fixed-top {
-    padding: 0px;
+    padding: 25px 0;
     -webkit-transition: padding .3s;
     -moz-transition: padding .3s;
     transition: padding .3s;
 }
 
 .navbar-fixed-top .navbar-brand {
+	color: #3b27aa;
     font-size: 2em;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -197,8 +334,10 @@ h3 {
 /* Footer */
 footer {
     color: #fff;
-    height: 50px;
-    background-color: #e2e2e2;
+    height: 100px;
+    background-color: #000;
+    padding-top: 20px;
+    font-size: 20px;
 }
 
 footer .footer-col {
