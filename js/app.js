@@ -1,3 +1,9 @@
+var closeModal = function(modalName) {
+  $('body').removeClass('modal-open');
+  $('.modal-backdrop').remove();
+  $(modalName).modal('hide');
+};
+
 var myApp = angular.module('myApp', ['ngRoute']);
 // config route provider
 myApp.config(function($routeProvider) {
