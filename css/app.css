@@ -2,6 +2,23 @@ body {
     overflow-x: hidden;
 }
 
+.row {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.theTeam {
+    font-size: 15px;
+}
+
+
+#training {
+    margin-top: 40px;
+    text-align: center;
+}
+
 .module {
     display: block;
     margin: 0 auto;
@@ -71,7 +88,7 @@ body {
     opacity: .8;
 }
 
-p{
+p {
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-size: 20px;
     margin-top: 30px;
