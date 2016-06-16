@@ -32,7 +32,8 @@ myApp.config(function($routeProvider) {
       redirectTo: '/'
     })
 })
-   // Landing page controller
+
+// Landing page controller
 .controller('LandingController', function($scope){
   $scope.number = 20
 })
@@ -46,6 +47,8 @@ myApp.config(function($routeProvider) {
 .controller('ContentController', function($scope){
   $scope.url = "http://conference.unavsa.org/wp-content/uploads/2015/06/SEA-pic.jpg"
 })
+
+// Technical controller
 .controller('TechnicalController', function($scope){
   $(function(){ /* to make sure the script runs after page load */
 
@@ -73,8 +76,9 @@ myApp.config(function($routeProvider) {
     
   });
  
- 
 })
+
+// Soon Controller
 .controller('SoonController', function($scope){
   $scope.about = "Here's some information about this page."
 })
@@ -87,7 +91,22 @@ myApp.config(function($routeProvider) {
         // NOTE: We don't actually need the $anchorScroll() service; but, we need to
         // inject it here in order to guarantee that it is instantiated and starts
         // watching the $location for changes.
-        
+
+// Controller for not breaking anchor tags
+.controller('AppController',
+    function AppController( $scope, $location, $route ) {
+        var vm = this;
+        vm.currentUrl = "";
+        // When the location changes, capture the state of the full URL.
+        $scope.$on(
+            "$locationChangeSuccess",
+            function locationChanged() {
+                vm.currentUrl = $location.url();
+            }
+        );
+    }
+)
+
 .directive(
     "ngAnchor",
     function anchorDirective( $location, $anchorScroll ) {
