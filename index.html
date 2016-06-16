@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.js"></script>
+		<script src="js/Chart.js/Chart.min.js"></script>
+
+		<!-- Add angular route library here -->
+
+		<script src="js/app.js"></script>
+		<link href="css/app.css" rel="stylesheet" type = "text/css"/>
+		<meta charset="utf-8">
+		<title>EventDoc</title>
+	</head>
+
+	<body id="page-top">
+
+		<!-- Nav Bar Content Here -->
+	    <nav class="navbar navbar-default navbar-fixed-top">
+	        <div class="container">
+
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header page-scroll">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="#/">EventDoc</a>
+	            </div>
+
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li class="page-scroll">
+	                        <a href="#/">Home</a>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <a href="#/content">QuickStart</a>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <a href="#/technical">Technical</a>
+	                    </li>
+	                     <li class="page-scroll">
+	                        <a href="#/soon">In Development</a>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <a href="#/about">About</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container-fluid -->
+	    </nav>
+
+		<!-- Main Content Here -->
+		<div id="main-content" class="container" ng-app="myApp">
+			<div ng-view></div>
+		</div>
+
+		<!-- Footer Content Here -->
+		<footer class="text=center">
+			<div class="container footer-col">
+				<a href="/#">Top of Page</a>
+			</div>
+		</footer>
+
+	</body>
+
+</html>

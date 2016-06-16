@@ -1,0 +1,345 @@
+body {
+    overflow-x: hidden;
+    background-color: #f7f7f7;
+}
+
+.teampic {
+    height: 150px;
+    width: 115px
+}
+
+.col-sm-3 {
+    height: 300px;
+}
+
+div{
+	display: block;
+}
+
+header {
+	display: table;
+	min-height: auto;
+}
+
+.page-top{
+	margin-top: 100px;
+}
+
+.btn{
+	border: none;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.btn a{
+	text-decoration: none;
+}
+
+.chart{
+	background-color: white;
+	background-size; 
+	overflow: hidden;
+}
+
+#links{
+	margin-bottom: 50px;
+}
+
+/* section styles */
+section{
+	padding-top: 75px;
+	padding-bottom: 75px;
+	width: 100%;
+	color: white;
+}
+
+.section-1{
+	background-color: #155184;
+}
+
+.section-1 .read_more{
+	color: white;
+}
+
+.section-1 .read_more:hover{
+	color: #b8b8b8;
+}
+
+.section-2{
+	color: #155184;
+}
+
+.chart-container{
+	padding-top: 50px;
+	padding-bottom: 100px;
+	background-color: #155184;
+	color: white;
+	font-size: 45px;
+}
+
+.module {
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+    width: auto;
+}
+
+.row {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.theTeam {
+    font-size: 15px;
+}
+
+#Paper {
+    display: inline-block;
+}
+
+.label {
+    display: inline-block;
+}
+
+.serverPic {
+    width: 90%
+}
+
+#traumaDoc {
+    width: 90%;
+}
+
+.startCode {
+    margin-left: 5%;
+}
+
+#homeScreen {
+    height: 50%;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+#dev-title{
+	margin-bottom: 40px;
+}
+
+#fullBox {
+    height: 600px;
+    width: auto;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#title {
+    position: relative;
+    margin-top: 70px;
+    text-align: center;
+}
+
+#home-content {
+    text-align: center;
+}
+
+.break {
+    width: 100%;
+    height: 10px;
+}
+
+.gray-line {
+    width: 100%;
+    height: 2px;
+    color: #e2e2e2;
+    border: none;
+    opacity: .8;
+}
+
+p{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p.chartTitle {
+    font-style: bold;
+}
+
+p.caption {
+    font-style: italic;
+}
+
+#saying {
+    font-size: 
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+    color: gray;
+}
+
+#top-img {
+    background-image: url('../img/img_2947_resize.jpg');
+    margin-top: 30px;
+}
+
+.content {
+    text-align: center;
+    /*margin-left: 5%;
+    margin-right: 5%;*/
+}
+
+.content2 {
+    text-align: left;
+    /*margin-right: 5%;
+    margin-left: 5%;*/
+}
+
+#logo {
+    height: 75px;
+    width: 250px;
+}
+
+/* Main Page Elements */
+
+#header {
+	width: 100%;
+	margin-top: 100px;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	padding-top: 25%;
+	padding-bottom: 25%;
+	display: block;
+	background-image: url(../img/iPadMockup.png);
+	background-size: cover;
+}
+
+#coverphoto{
+	width: 100%;
+}
+
+#header-content{
+	text-align: center;
+	vertical-align: middle;
+}
+
+#header-inner{
+	color: #ffffff;
+	margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+
+}
+
+.title{
+	font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+#container{
+	width: 100%;
+}
+
+#main-content {
+	width: 100%;
+	padding: 0px;
+	display: inline-block;
+}
+
+#about{
+	display: block;
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar-brand {
+	color: #3b27aa;
+}
+
+.navbar-right{
+	float: right;
+	margin-right: -15px;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-fixed-top {
+    padding: 25px 0;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+}
+
+.navbar-fixed-top .navbar-brand {
+	color: #3b27aa;
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    height: 100px;
+    background-color: #000;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
