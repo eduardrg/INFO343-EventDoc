@@ -15,7 +15,7 @@
 		<h2>What is EventDoc</h2>
 		<p id='intro-blurb'>The EventDoc System is a comprehensive package that gives the users the recording application, device with application pre-installed, and all other necessary infrastructure to fully record a cardiac arrest event.  This holistic system is the future for hostipal record keeping and immediate patient information retrival.  During a Code Blue there is always hectic activity and the old style pen and paper recording only hampers the process of gathering the appropriate data needed for not only for the patients immediate future, but future patient safety as well.
 		</p>
-		<button type='button' class='btn btn-default'><a href='#/content'>Quick Start</a></button>
+		<button type='button' class='btn btn-default' onclick="location.href='#/content';">Quick Start</button>
 	</section>
 	
 	<section id='stats' class='section-2 content'>
@@ -51,7 +51,9 @@
 		        <h2 class="modal-title">The Server</h2>
 		      </div>
 		      <div class="modal-body">
-		        <p>With the package you will recieve a full implemented server that the Ipads are already connected with. For more information go to our <a href='#/technical' onclick="$('serverModal').modal('hide')">Technical</a> section.</p>
+
+		        <p>With the package you will recieve a full implemented server that the Ipads are already connected with. For more information go to our <a href='#/technical' onclick="closeModal('serverModal')">Technical</a> section.</p>
+		        
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
