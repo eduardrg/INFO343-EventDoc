@@ -28,9 +28,6 @@ myApp.config(function($routeProvider) {
       templateUrl: 'templates/soon.html',
       controller: 'SoonController',
     })
-    .otherwise({
-      redirectTo: '/'
-    })
 })
    // Landing page controller
 .controller('LandingController', function($scope){
